@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark_Light__mode</title>
+    <style>
+
+      #bb,#bc{
+       text-align: center;
+      }
+      #bt1{
+          color: white;
+          background-color: black;
+      }
+
+      #bb{
+          text-decoration: underline;
+      }
+    </style>
+</head>
+<body id="bg">
+    <button class= "bt" id="bt1" type="button" onclick="myFunctionDark()">Dark Mode</button>
+    <button class= "bt" id="bt2" type="button" onclick="myFunctionLight()">Light Mode</button>
+    <h1 id="bb">Switch to Dark/Light Mode : By Click on the Button </h1>
+    <p id="bc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident molestiae dolores mollitia delectus omnis natus earum nobis. Ad facilis odit tenetur quos perferendis nesciunt debitis. Amet tenetur, voluptatibus dolorem consequuntur inventore ut non voluptate aspernatur repudiandae illum in nisi modi excepturi nostrum nam nihil? Omnis, quidem? Consequuntur expedita cum quos placeat possimus ea at est magni iusto veritatis autem provident officia, quasi esse, sequi, eveniet hic ut?</p> 
+
+<script>
+    function myFunctionDark(){
+        document.getElementById("bb").style.color="white";
+        document.getElementById("bc").style.color="white";
+        document.body.style.backgroundColor="black";
+    }
+    function myFunctionLight(){
+        document.getElementById("bb").style.color="black";
+        document.getElementById("bc").style.color="black";
+        document.body.style.backgroundColor="white";
+    }
+       
+</script>    
+</body>
+</html>
